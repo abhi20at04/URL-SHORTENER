@@ -2,13 +2,15 @@
 import express from 'express'
 import urlRoutes from './routes/urlRoutes.js'
 import { limiter } from './middleware/rateLimiter.js';
-import path from 'path'
+import { redirectUrl } from './controllers/urlController.js';
+import path from 'path';
 
 
 
 const app = express();
 app.use(express.json());
-// app.use(express.static(path.resolve('public')));
+app.use(express.static(path.resolve('public')));
 app.use('/api', urlRoutes);
+app.get('/:code', redirectUrl);
 
 export default app
