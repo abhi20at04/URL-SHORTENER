@@ -15,15 +15,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/05sanjaykumar/URL-shortern.git"
+    "url": "git+https://github.com/abhi20at04/URL-shortern.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/05sanjaykumar/URL-shortern/issues"
+    "url": "https://github.com/abhi20at04/URL-shortern/issues"
   },
-  "homepage": "https://github.com/05sanjaykumar/URL-shortern#readme",
+  "homepage": "https://github.com/abhi20at04/URL-shortern#readme",
   "dependencies": {
     "dotenv": "^16.5.0",
     "express": "^5.1.0",
