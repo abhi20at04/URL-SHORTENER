@@ -8,6 +8,11 @@ import path from 'path';
 
 
 const app = express();
+// Trust proxy when behind a reverse proxy so req.protocol and X-Forwarded-* headers are respected.
+// Enable by setting TRUST_PROXY=true or running with NODE_ENV=production.
+if (process.env.TRUST_PROXY === 'true' || process.env.NODE_ENV === 'production') {
+	app.set('trust proxy', true);
+}
 app.use(express.json());
 app.use(express.static(path.resolve('public')));
 app.use('/api', urlRoutes);
