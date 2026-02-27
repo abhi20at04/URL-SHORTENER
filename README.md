@@ -6,7 +6,7 @@ A full-stack, production-grade URL shortening service built with **Node.js**, **
 
 ## 🌍 Live Demo
 
-> 🟢 Deployed on [Render](https://url-shortern-9qxj.onrender.com/)  
+> 🟢 Deployed on [Render](https://url-shortener-r91c.onrender.com/)  
 > Frontend: Static `HTML + JS`  
 > Backend: Node.js + Redis  
 > Dockerized with `Dockerfile` and `nginx` (for local use)
